@@ -1,0 +1,317 @@
+/* ================================================================
+   GULDGRAVER47 WEBSITE - SIMPLE 2004 STYLE
+   Change the colors, sizes and spacing here.
+   ================================================================ */
+
+/* 1. COLORS AND PAGE WIDTH */
+body {
+    margin: 0;
+    background-image: url("stars_back.png");
+    background-repeat: repeat;
+    background-position: top left;
+    background-attachment: fixed;
+    background-color: #000;
+    color: #000;
+    font: 15px Arial, Verdana, sans-serif;
+}
+
+/* 2. BLACK STAR HEADER */
+.star-header { background: #000; height: 129px; }
+.header-layout { position: relative; width: 495px; max-width: 100%; height: 129px; margin: 0 auto; }
+.site-logo {
+    position: absolute;
+    top: 0;
+    left: -60px;
+    width: 180px;
+    height: auto;
+    background: transparent;
+    text-decoration: none;
+}
+
+.site-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.logo-text {
+    display: block;
+    font: bold 15px/24px Arial, sans-serif;
+    text-align: center;
+    white-space: nowrap;
+    transform: rotate(-10deg);
+}
+
+.star {
+    position: absolute;
+    font: bold 53px/1 Arial, sans-serif;
+    color: #fff000;
+    user-select: none;
+
+    /* Star glow */
+    text-shadow:
+        0 0 3px #ffffff,
+        0 0 8px #ffff00,
+        0 0 16px #ffdd00;
+}
+
+.star-one { top: 18px; left: 127px; }
+.star-two { top: 72px; left: 194px; }
+.star-three { top: 20px; left: 268px; }
+.star-four { top: 45px; left: 344px; }
+.star-five { top: 21px; left: 413px; }
+.star-six { top: 92px; left: 460px; font-size: 34px; display: none; }
+
+/* 3. HOME PAGE LAYOUT */
+.home-main {
+    position: relative;
+    box-sizing: border-box;
+    width: 700px; max-width: 100%; min-height: 454px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.home-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    /* SIZE OF HOME IMAGE */
+    width: 130px;
+    height: 130px;
+
+    /* NEW GALAXY BACKGROUND */
+    background-image: url("HomeLinky.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 125%;
+    background-color: transparent;
+
+    /* REMOVE WHITE CIRCLE */
+    border: none;
+    border-radius: 0;
+
+    /* HOME TEXT */
+    color: rgb(255, 5, 5);
+    font: bold 18px Arial, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 0 5px black;
+
+    /* BLEND BLACK IMAGE BACKGROUND */
+    mix-blend-mode: screen;
+}
+
+
+.champion-choices {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+.champion-choice {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 320px;
+    height: 430px;
+    flex: 0 0 320px;
+
+    padding: 100px 50px 30px;
+
+    border: none;
+    border-radius: 0;
+    background: transparent;
+
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+}
+
+.champion-choice:hover {
+    outline: none;
+    background: transparent;
+}
+
+
+.champion-choice {
+    background-image: url("JaxUrgot_F.png");
+    background-repeat: no-repeat;
+    background-size: 640px 430px;
+}
+
+.champion-choice:first-child {
+    background-position: left top;
+}
+
+.champion-choice:last-child {
+    background-position: right top;
+}
+
+
+.portrait-frame {
+    width: 160px;
+    height: 160px;
+    border: none;
+    background: transparent;
+}
+
+.champion-choice img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+}
+
+
+
+
+
+.champion-choice:hover, .champion-choice:focus-visible {
+    background: #fff4b8;
+    outline: 2px solid #000;
+}
+.portrait-frame {
+    display: block; position: relative;
+    width: 72px; height: 72px;
+    border: 2px solid #000;
+    background: #ddd;
+}
+.picture-fallback {
+    display: flex; align-items: center; justify-content: center;
+    height: 100%; text-align: center;
+    font-size: 11px; font-weight: bold;
+}
+.champion-choice img {
+    display: block; position: absolute;
+    left: 0; top: 0;
+    width: 72px; height: 72px;
+}
+.champion-choice strong {
+    font-size: 26px;
+    color: #0011ff;
+    margin-top: 100px;
+}
+.champion-choice span { font-size: 12px; margin-top: 4px; }
+
+/* 4. JAX AND URGOT GUIDE PAGES */
+.guide-main {
+    box-sizing: border-box; width: 730px;
+    max-width: calc(100% - 24px);
+    margin: 16px auto 40px;
+}
+.guide-nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin: 0 0 16px; }
+.guide-nav a, .return-home a {
+    display: inline-block; background: white;
+    border: 3px solid black; padding: 8px 16px;
+    color: #000; text-decoration: none; font-weight: bold;
+}
+.guide-nav .active { background: #ffec56; }
+.guide-nav a:hover, .return-home a:hover { background: #ffec56; }
+.guide-intro {
+    display: flex; align-items: center; gap: 16px;
+    border: 3px solid black; padding: 12px;
+    background: #fff;
+}
+.guide-intro img { width: 72px; height: 72px; border: 2px solid #000; }
+.guide-intro h1 { margin: 0 0 4px; font-size: 23px; }
+.guide-intro p { margin: 0; font-size: 13px; }
+.search-panel { background: #ffe7b4; border: 3px solid black; margin: 12px 0; padding: 12px; }
+.search-panel label { font-weight: bold; }
+.search-field { width: 220px; max-width: 100%; padding: 7px; border: 2px solid black; background: white; }
+.count { float: right; padding: 7px 0; font-size: 12px; }
+.champion-card { margin-bottom: 8px; border: 3px solid #000; background: #fff; }
+.champion-button {
+    display: block; box-sizing: border-box; width: 100%;
+    padding: 7px; background: white; border: 0; color: #000;
+    text-align: left; cursor: pointer; font: 15px Arial, sans-serif;
+}
+.champion-button:hover, .champion-button.active { background: #ffed8c; }
+.champion-title { font-weight: bold; vertical-align: middle; }
+.expand-text { float: right; font: bold 11px Arial, sans-serif; padding: 16px 0; }
+.image-box {
+    position: relative; display: inline-block;
+    vertical-align: middle; overflow: hidden;
+    background: #eee; color: black; text-align: center;
+    border: 2px solid black; margin-right: 12px;
+}
+.image-fallback { position: absolute; left: 0; top: 0; width: 100%; height: 100%; font-weight: bold; }
+.image-box img { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; }
+.large-icon { width: 48px; height: 48px; line-height: 48px; font-size: 25px; }
+.small-icon { width: 36px; height: 36px; line-height: 36px; font-size: 19px; margin-right: 2px; }
+.guide-panel { padding: 12px; border-top: 3px solid black; background: #fff; }
+.guide-heading { background: #000; color: #ffe928; padding: 8px; margin-bottom: 12px; font-weight: bold; }
+.guide-table { width: 100%; border-collapse: collapse; }
+.guide-runes { width: 45%; padding-right: 12px; vertical-align: top; border-right: 2px dotted #aaa; }
+.guide-items { width: 55%; padding-left: 12px; vertical-align: top; }
+.section-name { font-weight: bold; border-bottom: 1px solid black; margin-bottom: 8px; padding: 4px 0; }
+.build-section { margin-bottom: 15px; }
+.tiles { display: flex; flex-wrap: wrap; gap: 6px; }
+.build-tile {
+    box-sizing: border-box; display: inline-flex; align-items: center;
+    min-width: 118px; width: calc(50% - 3px);
+    min-height: 48px; padding: 3px;
+    border: 1px solid #aaa; background: #fff6de;
+    font-size: 11px;
+}
+.tile-name { line-height: 1.3; }
+.sample-note { font-size: 12px; text-align: center; }
+.no-results { padding: 20px; background: #fff; text-align: center; border: 3px solid #000; }
+.return-home { text-align: center; }
+
+/* 5. SMALLER SCREENS */
+@media (max-width: 420px) {
+    .site-logo { transform: scale(.86); transform-origin: top left; }
+    .star-one { left: 26%; } .star-two { left: 40%; }
+    .star-three { left: 55%; } .star-four { left: 70%; }
+    .star-five { left: 84%; }
+    .champion-choices { gap: 8vw; }
+    .champion-choice { flex-basis: 34vw; min-width: 120px; }
+}
+@media (max-width: 620px) {
+    .guide-table, .guide-table tbody, .guide-table tr, .guide-table td { display: block; width: auto; }
+    .guide-runes { border: 0; padding: 0; }
+    .guide-items { padding: 0; }
+    .count { float: none; display: block; }
+    .search-field { width: 60%; }
+    .expand-text { font-size: 9px; }
+}
+
+.champion-choice {
+    zoom: 0.8;
+}
+
+
+/* RONALDO GIF IN BOTTOM RIGHT CORNER */
+.ronaldo-gif {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+    width: 160px;
+    height: auto;
+
+    z-index: 100;
+    pointer-events: none;
+}
+
+
+/* VIDEO IN BOTTOM LEFT CORNER */
+.corner-video {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+
+    width: 400px;
+    height: auto;
+
+    z-index: 100;
+}
